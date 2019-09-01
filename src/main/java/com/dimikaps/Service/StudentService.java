@@ -16,4 +16,8 @@ public class StudentService {
     public Collection<Student> getAllStudents(){
         return studentDao.getAllStudents();
     }
+
+    public  Student getStudentByID(int id){
+        return this.studentDao.getStudentByID(id);
+    }
 }

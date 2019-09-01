@@ -24,4 +24,8 @@ public class StudentDao {
     public Collection<Student> getAllStudents(){
         return this.students.values();
     }
+
+    public  Student getStudentByID(int id){
+        return this.students.get(id);
+    }
 }
