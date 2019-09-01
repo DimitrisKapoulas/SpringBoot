@@ -28,4 +28,8 @@ public class StudentService {
     public void updateStudent(Student student){
         this.studentDao.updateStudent(student);
     }
+
+    public void insertStudent(Student student) {
+        this.studentDao.insertStudentToDB(student);
+    }
 }

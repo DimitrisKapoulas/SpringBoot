@@ -34,4 +34,9 @@ public class StudentController {
     public void updateStudent(@RequestBody Student student){
         studentService.updateStudent(student);
     }
+
+    @RequestMapping( method = RequestMethod.POST)
+    public void insertStudent(@RequestBody Student student){
+        studentService.insertStudent(student);
+    }
 }
